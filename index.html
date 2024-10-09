@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- add favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="./assets/favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="./assets/favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="./assets/favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="./assets/favicon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="./assets/favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="./assets/favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="./assets/favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="./assets/favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="./assets/favicon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="./assets/favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="./assets/favicon/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- EMBED fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Sora:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- reset css -->
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <!-- style css -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- responsive -->
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+    <title>KHOA CÔNG NGHỆ THÔNG TIN</title>
+  </head>
+
+  <body>
+    <!-- header -->
+    <header class="header">
+      <div class="container">
+        <div class="header-top">
+          <!-- logo -->
+          <a href="./"
+            ><img
+              src="./assets/img/logo.svg"
+              alt="Logo khoa công nghệ thông tin"
+              class="logo header__logo"
+          /></a>
+          <!-- nav -->
+          <nav class="navbar">
+            <ul class="navbar__list" id="navbar__list--pc">
+              <li class="navbar__item">
+                <a href="#!" class="navbar__link navbar__link--active">Home</a>
+              </li>
+              <li class="navbar__item">
+                <a href="#!" class="navbar__link">Admission</a>
+              </li>
+              <li class="navbar__item">
+                <a href="#!" class="navbar__link">Education & Training</a>
+              </li>
+              <li class="navbar__item">
+                <a href="#!" class="navbar__link">Forum</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- cta action -->
+          <div class="header__action">
+            <a href="#!" class="header__action--login">Log In</a>
+            <a href="#!" class="btn header__action--signup">Sign Up</a>
+          </div>
+        </div>
+
+        <!-- hero -->
+        <section class="hero">
+          <!-- hero left -->
+          <section class="hero__content">
+            <h1 class="hero__heading">
+              Welcome to Faculty of information technology KMA
+            </h1>
+            <p class="hero__desc">
+              Exceptional training program for all students. Your future career
+              begins with our great lecturers.
+            </p>
+            <div class="hero__row">
+              <a href="#!" class="btn">Contact now</a>
+              <span class="hero__phone">or call (123) 456-7890</span>
+            </div>
+          </section>
+
+          <!-- hero right -->
+          <div class="hero__media">
+            <figure class="hero__images">
+              <img
+                src="./assets/img/hero-1.jpg"
+                alt="KMA picture"
+                class="hero__img hero__img-large"
+              />
+              <img
+                src="./assets/img/hero-2.jpg"
+                alt="KMA picture"
+                class="hero__img hero__img-small"
+              />
+            </figure>
+          </div>
+        </section>
+      </div>
+    </header>
+
+    <!-- Tablet/mobile header -->
+    <div class="mobile-header">
+      <!-- tablet/mobile menu -->
+      <input
+        type="checkbox"
+        name="menu-checkbox"
+        id="menu-checkbox"
+        class="menu-checkbox"
+        hidden
+      />
+      <label for="menu-checkbox">
+        <svg
+          class="menu-header__icon"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 448 512"
+        >
+          <path
+            fill="currentColor"
+            d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+          />
+        </svg>
+      </label>
+
+      <!-- overlay -->
+      <label for="menu-checkbox" class="menu-overlay"></label>
+
+      <!-- menu content -->
+      <div class="menu-drawer">
+        <!-- menu top -->
+        <div class="menu-drawer__top">
+          <!-- logo -->
+          <a href="./"
+            ><img src="./assets/img/logo.svg" alt="shine smile" class="logo"
+          /></a>
+          <!-- icon close menu -->
+          <label for="menu-checkbox">
+            <svg
+              class="close__menu"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <path
+                fill="currentColor"
+                d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c-9.4 9.4-9.4 24.6 0 33.9l47 47-47 47c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l47-47 47 47c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-47-47 47-47c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-47 47-47-47c-9.4-9.4-24.6-9.4-33.9 0z"
+              />
+            </svg>
+          </label>
+        </div>
+        <!-- nav mobile -->
+        <ul id="navbar__list--mobile"></ul>
+        <!-- sử dụng js để copy navbar -->
+        <script>
+          const navPC = document.querySelector("#navbar__list--pc");
+          const navMobile = document.querySelector("#navbar__list--mobile");
+          // sao chep
+          navMobile.innerHTML = navPC.innerHTML;
+        </script>
+
+        <!-- separate ngăn cách  -->
+        <div class="separate"></div>
+        <!-- cta action -->
+        <div class="show-on-mobile">
+          <li class="navbar__item">
+            <a href="#!" class="navbar__link">Log In</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#!" class="navbar__link">Sign Up</a>
+          </li>
+        </div>
+      </div>
+    </div>
+
+    <!-- main -->
+    <main>
+      <!-- our service -->
+      <section class="service">
+        <div class="container">
+          <h2 class="service__heading section-heading">Our training program</h2>
+          <p class="service__desc section-desc">
+            Exceptional training program for all students. Your future career
+            begins with our great lecturers.
+          </p>
+
+          <div class="service__row">
+            <!-- service left -->
+            <figure>
+              <img
+                src="./assets/img/service.jpg"
+                alt="Our services"
+                class="service__img"
+              />
+            </figure>
+            <!-- service right -->
+            <div class="service__list">
+              <!-- item 1 -->
+              <section class="service-item">
+                <div class="service-item__icon">
+                  <svg
+                    width="32"
+                    height="32"
+                    viewBox="0 0 72 72"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M68.7624 63.9901L46.7326 41.9446L46.691 41.9862C50.4943 36.99 52.2574 30.7356 51.6236 24.4886C50.9897 18.2416 48.0063 12.4687 43.277 8.3383C38.5477 4.20788 32.4259 2.02842 26.1504 2.24102C19.875 2.45362 13.9147 5.0424 9.47576 9.48342C5.03686 13.9244 2.45094 19.886 2.24135 26.1615C2.03176 32.4371 4.21415 38.5579 8.34684 43.2852C12.4795 48.0125 18.2538 50.9932 24.5011 51.624C30.7484 52.2549 37.002 50.4887 41.9964 46.6831L41.9615 46.7179L63.9879 68.7601C64.6207 69.3932 65.4791 69.749 66.3743 69.7492C67.2695 69.7494 68.1281 69.394 68.7612 68.7612C69.3944 68.1283 69.7502 67.2699 69.7504 66.3747C69.7506 65.4795 69.3952 64.6209 68.7624 63.9878V63.9901ZM27.0001 45.0001C23.44 45.0001 19.9599 43.9444 16.9998 41.9665C14.0398 39.9886 11.7327 37.1774 10.3703 33.8884C9.0079 30.5993 8.65144 26.9801 9.34597 23.4884C10.0405 19.9968 11.7548 16.7895 14.2722 14.2721C16.7895 11.7548 19.9968 10.0405 23.4885 9.34593C26.9801 8.65139 30.5993 9.00785 33.8884 10.3702C37.1775 11.7326 39.9887 14.0397 41.9666 16.9998C43.9444 19.9599 45.0001 23.44 45.0001 27.0001C44.9995 31.7738 43.1029 36.3518 39.7274 39.7273C36.3518 43.1028 31.7738 44.9995 27.0001 45.0001Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </div>
+                <div class="service-item__body">
+                  <div class="service-item__heading">
+                    Object-oriented programming
+                  </div>
+                  <div class="service-item__desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </div>
+                </div>
+              </section>
+
+              <!-- item 2 -->
+              <section class="service-item">
+                <div class="service-item__icon">
+                  <svg
+                    width="32"
+                    height="32"
+                    viewBox="0 0 72 72"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M68.7624 63.9901L46.7326 41.9446L46.691 41.9862C50.4943 36.99 52.2574 30.7356 51.6236 24.4886C50.9897 18.2416 48.0063 12.4687 43.277 8.3383C38.5477 4.20788 32.4259 2.02842 26.1504 2.24102C19.875 2.45362 13.9147 5.0424 9.47576 9.48342C5.03686 13.9244 2.45094 19.886 2.24135 26.1615C2.03176 32.4371 4.21415 38.5579 8.34684 43.2852C12.4795 48.0125 18.2538 50.9932 24.5011 51.624C30.7484 52.2549 37.002 50.4887 41.9964 46.6831L41.9615 46.7179L63.9879 68.7601C64.6207 69.3932 65.4791 69.749 66.3743 69.7492C67.2695 69.7494 68.1281 69.394 68.7612 68.7612C69.3944 68.1283 69.7502 67.2699 69.7504 66.3747C69.7506 65.4795 69.3952 64.6209 68.7624 63.9878V63.9901ZM27.0001 45.0001C23.44 45.0001 19.9599 43.9444 16.9998 41.9665C14.0398 39.9886 11.7327 37.1774 10.3703 33.8884C9.0079 30.5993 8.65144 26.9801 9.34597 23.4884C10.0405 19.9968 11.7548 16.7895 14.2722 14.2721C16.7895 11.7548 19.9968 10.0405 23.4885 9.34593C26.9801 8.65139 30.5993 9.00785 33.8884 10.3702C37.1775 11.7326 39.9887 14.0397 41.9666 16.9998C43.9444 19.9599 45.0001 23.44 45.0001 27.0001C44.9995 31.7738 43.1029 36.3518 39.7274 39.7273C36.3518 43.1028 31.7738 44.9995 27.0001 45.0001Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </div>
+                <div class="service-item__body">
+                  <div class="service-item__heading">Web-app Development</div>
+                  <div class="service-item__desc">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Odio.
+                  </div>
+                </div>
+              </section>
+
+              <!-- item 3 -->
+              <section class="service-item">
+                <div class="service-item__icon">
+                  <svg
+                    width="32"
+                    height="32"
+                    viewBox="0 0 72 72"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M68.7624 63.9901L46.7326 41.9446L46.691 41.9862C50.4943 36.99 52.2574 30.7356 51.6236 24.4886C50.9897 18.2416 48.0063 12.4687 43.277 8.3383C38.5477 4.20788 32.4259 2.02842 26.1504 2.24102C19.875 2.45362 13.9147 5.0424 9.47576 9.48342C5.03686 13.9244 2.45094 19.886 2.24135 26.1615C2.03176 32.4371 4.21415 38.5579 8.34684 43.2852C12.4795 48.0125 18.2538 50.9932 24.5011 51.624C30.7484 52.2549 37.002 50.4887 41.9964 46.6831L41.9615 46.7179L63.9879 68.7601C64.6207 69.3932 65.4791 69.749 66.3743 69.7492C67.2695 69.7494 68.1281 69.394 68.7612 68.7612C69.3944 68.1283 69.7502 67.2699 69.7504 66.3747C69.7506 65.4795 69.3952 64.6209 68.7624 63.9878V63.9901ZM27.0001 45.0001C23.44 45.0001 19.9599 43.9444 16.9998 41.9665C14.0398 39.9886 11.7327 37.1774 10.3703 33.8884C9.0079 30.5993 8.65144 26.9801 9.34597 23.4884C10.0405 19.9968 11.7548 16.7895 14.2722 14.2721C16.7895 11.7548 19.9968 10.0405 23.4885 9.34593C26.9801 8.65139 30.5993 9.00785 33.8884 10.3702C37.1775 11.7326 39.9887 14.0397 41.9666 16.9998C43.9444 19.9599 45.0001 23.44 45.0001 27.0001C44.9995 31.7738 43.1029 36.3518 39.7274 39.7273C36.3518 43.1028 31.7738 44.9995 27.0001 45.0001Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </div>
+                <div class="service-item__body">
+                  <div class="service-item__heading">
+                    Embedded system design
+                  </div>
+                  <div class="service-item__desc">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptates, praesentium?
+                  </div>
+                </div>
+              </section>
+              <a href="#!" class="btn service__btn">All courses</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- work -->
+      <section class="work">
+        <div class="container">
+          <h2 class="section-heading">How it works</h2>
+          <p class="section-desc work__desc">
+            Read our awesome feature that is absolutely suit for you. Explore
+            the feature and know the best.
+          </p>
+
+          <div class="work__list">
+            <!-- work item 1 -->
+            <section class="work-item">
+              <img
+                src="./assets/img/work-1.svg"
+                alt=""
+                class="work-item__icon"
+              />
+              <h3 class="work-item__heading">Live Class</h3>
+              <p class="work-item__desc">
+                We are providing live classes with the best lecturer for you.
+              </p>
+              <a href="#!" class="work-item__more">Learn More</a>
+            </section>
+
+            <!-- work item 2 -->
+            <section class="work-item">
+              <img
+                src="./assets/img/work-2.svg"
+                alt=""
+                class="work-item__icon"
+              />
+              <h3 class="work-item__heading">Discuss</h3>
+              <p class="work-item__desc">
+                Conversation with teachers or another students about task or any
+                other thing.
+              </p>
+              <a href="#!" class="work-item__more">Learn More</a>
+            </section>
+
+            <!-- work item 3 -->
+            <section class="work-item">
+              <img
+                src="./assets/img/work-3.svg"
+                alt=""
+                class="work-item__icon"
+              />
+              <h3 class="work-item__heading">Task</h3>
+              <p class="work-item__desc">
+                We give every of our students task for gathering knowledge at
+                home
+              </p>
+              <a href="#!" class="work-item__more">Learn More</a>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <!-- about -->
+      <section class="about">
+        <div class="container">
+          <div class="about-row">
+            <!-- about left -->
+            <div class="about__media">
+              <figure class="about__img">
+                <img
+                  src="./assets/img/about-1.jpg"
+                  alt=""
+                  class="about__img--big"
+                />
+                <img
+                  src="./assets/img/about-2.jpg"
+                  alt=""
+                  class="about__img--small"
+                />
+              </figure>
+            </div>
+            <!-- about right -->
+            <section class="about-content">
+              <h2 class="section-heading">Explore our modern facilities.</h2>
+              <p class="section-desc">
+                Our modern facilities ensure that we fully meet your learning
+                needs.
+              </p>
+              <a href="#!" class="btn about-content__btn">Explore</a>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <!-- team -->
+      <section class="team">
+        <div class="container">
+          <div class="team-header">
+            <h2 class="section-heading">Our IT Lecturers</h2>
+            <a href="#!" class="btn team__cta">Meet our lecturers</a>
+          </div>
+
+          <div class="team__list">
+            <!-- item 1 -->
+            <article class="team-item">
+              <div class="team-item__img-bg">
+                <img
+                  src="./assets/img/doc1.png"
+                  alt="Dr. Essence Page"
+                  class="team-item__thumb"
+                />
+              </div>
+
+              <h3 class="team-item__name">Ths. Le Duc Thuan</h3>
+              <p class="team-item__desc">Academy of cryptography techniques</p>
+            </article>
+
+            <!-- item 2 -->
+            <article class="team-item">
+              <div class="team-item__img-bg">
+                <img
+                  src="./assets/img/doc2.png"
+                  alt="Dr. Essence Page"
+                  class="team-item__thumb"
+                />
+              </div>
+
+              <h3 class="team-item__name">Ts. Le Anh Tien</h3>
+              <p class="team-item__desc">Academy of cryptography techniques</p>
+            </article>
+
+            <!-- item 3 -->
+            <article class="team-item">
+              <div class="team-item__img-bg">
+                <img
+                  src="./assets/img/doc3.png"
+                  alt="Dr. Essence Page"
+                  class="team-item__thumb"
+                />
+              </div>
+
+              <h3 class="team-item__name">Ths. Nguyen Van Phac</h3>
+              <p class="team-item__desc">Academy of cryptography techniques</p>
+            </article>
+
+            <!-- item 4 -->
+            <article class="team-item">
+              <div class="team-item__img-bg">
+                <img
+                  src="./assets/img/doc4.png"
+                  alt="Dr. Essence Page"
+                  class="team-item__thumb"
+                />
+              </div>
+
+              <h3 class="team-item__name">Ts. Pham Van Huong</h3>
+              <p class="team-item__desc">Academy of cryptography techniques</p>
+            </article>
+          </div>
+
+          <div class="control team__control">
+            <!-- previous -->
+            <button class="control__btn">
+              <svg
+                class="control-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="6"
+                height="12"
+                viewBox="0 0 6 12"
+                fill="none"
+              >
+                <path
+                  d="M5.5 1L0.5 6L5.5 11"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+            <!-- next -->
+            <button class="control__btn">
+              <svg
+                class="control-icon control-icon--next"
+                xmlns="http://www.w3.org/2000/svg"
+                width="6"
+                height="12"
+                viewBox="0 0 6 12"
+                fill="none"
+              >
+                <path
+                  d="M5.5 1L0.5 6L5.5 11"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- install mobile -->
+      <section class="install">
+        <div class="container">
+          <div class="install__inner">
+            <!-- install left -->
+            <figure>
+              <img src="./assets/img/kma-one.png" alt="" class="install__img" />
+            </figure>
+            <!-- install right -->
+            <section class="install__content">
+              <h2 class="section-heading install__heading">
+                Stay up to date with mobile-app
+              </h2>
+              <p class="install__desc">
+                If you’re missing information due inconvenient website version,
+                mobile-app might be the perfect solution.
+              </p>
+              <div class="install__row">
+                <a href="#!">
+                  <img
+                    src="./assets/img/Googleplay.svg"
+                    alt=""
+                    class="install__btn-img"
+                  />
+                </a>
+                <a href="#!">
+                  <img
+                    src="./assets/img/Appstore.svg"
+                    alt=""
+                    class="install__btn-img"
+                  />
+                </a>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <!-- blog -->
+      <section class="blog">
+        <div class="container">
+          <div class="blog__inner">
+            <!-- left blog -->
+            <section class="blog__content">
+              <h2 class="section-heading blog__heading">
+                Read Latest News & Events.
+              </h2>
+              <a href="#!" class="blog__more">Read All Blog</a>
+
+              <div class="control blog__control">
+                <!-- previous -->
+                <button class="control__btn">
+                  <svg
+                    class="control-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="6"
+                    height="12"
+                    viewBox="0 0 6 12"
+                    fill="none"
+                  >
+                    <path
+                      d="M5.5 1L0.5 6L5.5 11"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+                <!-- next -->
+                <button class="control__btn">
+                  <svg
+                    class="control-icon control-icon--next"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="6"
+                    height="12"
+                    viewBox="0 0 6 12"
+                    fill="none"
+                  >
+                    <path
+                      d="M5.5 1L0.5 6L5.5 11"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </section>
+            <!-- right blog -->
+            <div class="blog__list">
+              <!-- item 1 -->
+              <article class="blog-item">
+                <figure class="blog-item__wrap">
+                  <img
+                    src="./assets/img/blog-1.jpg"
+                    alt=" Embedded programming"
+                    class="blog-item__thumb"
+                  />
+                </figure>
+                <section class="blog-item__body">
+                  <h3>
+                    <a href="#!" class="blog-item__heading"
+                      >Main Types of Embedded Systems Worth Knowing.</a
+                    >
+                  </h3>
+                  <p class="blog-item__desc">
+                    Embedded systems can be independent or work as part of a
+                    larger platform...
+                  </p>
+                  <a href="#!" class="blog-item__more">Learn More</a>
+                </section>
+              </article>
+
+              <!-- item 2 -->
+              <article class="blog-item">
+                <figure class="blog-item__wrap">
+                  <img
+                    src="./assets/img/blog-2.jpg"
+                    alt="Key Considerations for Regulatory
+                                Compliant."
+                    class="blog-item__thumb"
+                  />
+                </figure>
+                <section class="blog-item__body">
+                  <h3>
+                    <a href="#!" class="blog-item__heading"
+                      >Bard vs ChatGPT: Which is better for coding?</a
+                    >
+                  </h3>
+                  <p class="blog-item__desc">
+                    We test out which tool is best at code generation, problem
+                    solving, refactoring code...
+                  </p>
+                  <a href="#!" class="blog-item__more">Learn More</a>
+                </section>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- appointment -->
+      <section class="appointment">
+        <div class="container">
+          <div class="appointment__inner">
+            <h2 class="section-heading appointment__heading">
+              Always welcoming new students
+            </h2>
+            <p class="section-desc appointment__desc">
+              Take control of your admission and get the personalized
+              information you want. Call (541) 772-8846 for more
+            </p>
+            <a href="#!" class="btn appointment__btn">Admission</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <section class="footer">
+      <div class="container">
+        <!-- top footer -->
+        <div class="footer__top">
+          <!-- column 1 -->
+          <div class="footer__column footer-hidden-tablet">
+            <!-- logo -->
+            <a href="./"
+              ><img src="./assets/img/logo.svg" alt="shine smile" class="logo"
+            /></a>
+            <p class="footer__desc">
+              Exceptional training program for all students. Your future career
+              begins with our great lecturers.
+            </p>
+          </div>
+          <!-- column 2 -->
+          <div class="footer__column">
+            <h3 class="footer__heading">Support</h3>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#!" class="footer__link">Help center</a>
+              </li>
+              <li class="footer__item">
+                <a href="#!" class="footer__link">Account information</a>
+              </li>
+              <li class="footer__item">
+                <a href="#!" class="footer__link">About</a>
+              </li>
+              <li class="footer__item">
+                <a href="#!" class="footer__link">Contact us</a>
+              </li>
+            </ul>
+            <h3 class="footer__heading">Support</h3>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#!" class="footer__link">Help center</a>
+              </li>
+              <li class="footer__item">
+                <a href="#!" class="footer__link">Account information</a>
+              </li>
+            </ul>
+          </div>
+          <!-- column 3 -->
+          <div class="footer__column">
+            <h3 class="footer__heading">Support</h3>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#!" class="footer__link">Help center</a>
+              </li>
+              <li class="footer__item">
+                <a href="#!" class="footer__link">Account information</a>
+              </li>
+            </ul>
+
+            <h3 class="footer__heading">Support</h3>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#!" class="footer__link">Help center</a>
+              </li>
+            </ul>
+          </div>
+          <!-- column 4 -->
+          <div class="footer__column">
+            <h3 class="footer__heading">Stay In Touch</h3>
+            <div class="footer__social">
+              <a href="#!" class="footer__social-btn">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="6"
+                  height="12"
+                  viewBox="0 0 6 12"
+                  fill="none"
+                >
+                  <path
+                    d="M3.98981 11.9358V6.0302H5.76473L6 3.9517H3.98981L3.9928 2.91132C3.9928 2.3692 4.0477 2.07885 4.87783 2.07885H5.98755V0H4.21224C2.07977 0 1.32931 1.00825 1.32931 2.70405V3.95186H0V6.03055H1.32931V11.8521C1.84718 11.9489 2.38257 12 2.93075 12C3.28487 12 3.63863 11.9786 3.98981 11.9358Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </a>
+              <a href="#!" class="footer__social-btn">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="12"
+                  viewBox="0 0 16 12"
+                  fill="none"
+                >
+                  <path
+                    d="M16 1.42062C15.405 1.66154 14.771 1.82123 14.11 1.89877C14.79 1.524 15.309 0.935077 15.553 0.225231C14.919 0.574154 14.219 0.820615 13.473 0.958154C12.871 0.366462 12.013 0 11.077 0C9.261 0 7.799 1.36062 7.799 3.02862C7.799 3.26862 7.821 3.49938 7.875 3.71908C5.148 3.59631 2.735 2.38985 1.114 0.552C0.831 1.00523 0.665 1.524 0.665 2.08246C0.665 3.13108 1.25 4.06062 2.122 4.59877C1.595 4.58954 1.078 4.44831 0.64 4.22585C0.64 4.23508 0.64 4.24708 0.64 4.25908C0.64 5.73046 1.777 6.95262 3.268 7.23415C3.001 7.30154 2.71 7.33385 2.408 7.33385C2.198 7.33385 1.986 7.32277 1.787 7.28215C2.212 8.48123 3.418 9.36277 4.852 9.39138C3.736 10.1972 2.319 10.6828 0.785 10.6828C0.516 10.6828 0.258 10.6717 0 10.6412C1.453 11.5062 3.175 12 5.032 12C11.068 12 14.368 7.38462 14.368 3.384C14.368 3.25015 14.363 3.12092 14.356 2.99262C15.007 2.56615 15.554 2.03354 16 1.42062Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </a>
+              <a href="#!" class="footer__social-btn">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="13"
+                  height="12"
+                  viewBox="0 0 13 12"
+                  fill="none"
+                >
+                  <path
+                    d="M0 1.39394C0 0.989891 0.146401 0.656558 0.439189 0.393939C0.731978 0.131309 1.11262 0 1.58108 0C2.04119 0 2.41344 0.129285 2.69788 0.387879C2.99066 0.654545 3.13707 1.00201 3.13707 1.4303C3.13707 1.81818 2.99486 2.14141 2.71042 2.4C2.41764 2.66667 2.03282 2.8 1.55598 2.8H1.54344C1.08333 2.8 0.711072 2.66667 0.426641 2.4C0.142209 2.13333 0 1.79798 0 1.39394ZM0.163127 12V3.90303H2.94884V12H0.163127ZM4.49228 12H7.27799V7.47879C7.27799 7.19595 7.31146 6.97777 7.37838 6.82424C7.49549 6.54949 7.67326 6.31716 7.91168 6.12727C8.1501 5.93737 8.44916 5.84242 8.80888 5.84242C9.74582 5.84242 10.2143 6.45252 10.2143 7.67273V12H13V7.35758C13 6.16161 12.7072 5.25455 12.1216 4.63636C11.536 4.01818 10.7622 3.70909 9.80019 3.70909C8.72104 3.70909 7.88031 4.15758 7.27799 5.05455V5.07879H7.26544L7.27799 5.05455V3.90303H4.49228C4.509 4.16161 4.51737 4.96565 4.51737 6.31515C4.51737 7.66464 4.509 9.55959 4.49228 12Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </a>
+            </div>
+
+            <h3 class="footer__heading">Subscribe</h3>
+            <p class="footer__desc">
+              Subscribe our newsletter for the latest update
+            </p>
+
+            <form class="footer-form" action="">
+              <input
+                type="email"
+                class="footer-form__input"
+                placeholder="Enter your email..."
+              />
+              <button class="footer-form__submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+
+        <!-- copyright -->
+        <div class="footer__copyright">
+          <p class="footer__copyright-text">
+            2024 GDN. Copyright and All rights reserved.
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
